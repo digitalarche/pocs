@@ -28,16 +28,23 @@ encryption:
 - `zipcrypto.zip` old zip crypto (PkZip 2.0)
 - `aes.zip` AES-256 crypto
 
-compression (old):
-- `store.zip` storage (no compression)
-- `shrunk.zip`  shrunk
-- `implode.zip`  implode
- - `implodeV3.zip`  implodeV3
-compression (new):
-- `deflate64.zip` Deflate64
-- `bz2.zip` bzip2
-- `lzma.zip` LZMA
-- `PPMd.zip` PPMd
+compressions:
+- `store.zip` 0-storage (no compression)
+- `shrunk.zip`  1-shrunk
+- `reduced1.zip` 2-reduced1
+- `reduced2.zip` 3-reduced2
+- `reduced3.zip` 4-reduced3
+- `reduced4.zip` 5-reduced4
+- `implode.zip`  6-implode
+ - `implodeV3.zip`  6-implodeV3
+- `simple.zip` 8-Deflate
+- `deflate64.zip` 9-Deflate64
+- `bz2.zip` 12-bzip2
+- `lzma.zip` 14-LZMA
+- `jpeg.zip` 96-JPEG
+- `wavpack.zip` 97-WavPack
+- `PPMd.zip` 98-PPMd
+- `aes.zip` 99 AES-256 crypto
 - `zopfli.zip` - super compressed with [Zopfli](https://github.com/google/zopfli) (via `advzip` from [AdvanceComp](https://www.advancemame.it/comp-readme.html))
 
 
